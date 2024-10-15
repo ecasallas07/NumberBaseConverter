@@ -1,6 +1,7 @@
 """Welcome to Reflex! This file outlines the steps to create a basic app."""
 
 import reflex as rx
+import numpy as np
 
 from rxconfig import config
 
@@ -10,6 +11,21 @@ class State(rx.State):
 
     ...
 
+#Backend
+
+#Convert base binary to decimal
+
+def convertBinaryDecimal():
+    num=101010
+    num_arr = list(map(int, str(num)))
+    reverse_num = reversed(list(num_arr))
+    count=0
+    sum_num = 0
+    for i in reverse_num:
+        n= (2 * count) * i
+        sum_num += n
+        count+=1
+    print(sum_num)
 
 def index() -> rx.Component:
     # Welcome Page (Index)
