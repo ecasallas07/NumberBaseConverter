@@ -16,4 +16,7 @@ def convertBinaryDecimal():
     # print(sum_num)
 
 
+def convertDecimalBinary():
+    num=10
+
 convertBinaryDecimal()
